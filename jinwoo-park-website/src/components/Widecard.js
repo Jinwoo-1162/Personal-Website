@@ -5,7 +5,7 @@ export const Widecard = (props) => {
         <div class="widecard">
             <div class="compdet">
                 <h3>
-                    {props.title} &nbsp;
+                    {props.title}
                     
                 </h3>
                 <h4 class="secondtext">{props.lang}</h4>

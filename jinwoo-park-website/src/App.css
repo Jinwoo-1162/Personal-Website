@@ -76,13 +76,14 @@ a
 .home
 {
   display: flex;
-  justify-content: center;
+  justify-content: top;
   flex-direction: column;
   align-items: center;
 }
 
 .profilepic
 {
+  margin-top: auto;
   width:200px;
   height:200px;
   margin:30px;
@@ -106,13 +107,14 @@ a
 .social i
 {
   padding-right:30px;
+  padding-left:30px;
   font-size:25px;
-  color:#9a9b9c;
+  color:black;
 }
 
 .social i:hover
 {
-  color:white;
+  color:gray;
 }
 
 .subtopic
@@ -157,4 +159,9 @@ h1,h2,h3,h4,p
 .projectlink i:hover
 {
   color:gray;
+}
+
+.emaillink
+{
+  color:black;
 }
