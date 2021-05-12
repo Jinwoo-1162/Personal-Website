@@ -6,7 +6,7 @@ import {Social} from '../components/Social.js';
 export const Home = (props) => {
     return (
         <div className="condiv home">
-            <img src={ProfilePic} className="profilepic"></img>
+            <img src={ProfilePic} title="Hello there!" className="profilepic" alt="Hello!"></img>
             <p></p>
             <TypingEffect className="typingeffect" text={['Hi! My name is Jinwoo Park!']} speed={100} eraseDelay={5000}></TypingEffect>
             <p></p>
