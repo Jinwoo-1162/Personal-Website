@@ -1,14 +1,12 @@
 import React from 'react';
-import {Link, BrowserRouter} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export const NavItem = (props) => {
     return (
-        <li>
-            <BrowserRouter>
-                <Link to={props.tolink}>
+        <li id={props.item}>
+                <Link to={props.tolink} onClick={() => props.activec(props.item)} >
                     {props.item}
                 </Link>
-            </BrowserRouter>
         </li>
     );
 }
