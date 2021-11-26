@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavItem } from './NavItem.js';
+import '../CSS/Navbar.css'
 
 export const Navbar = (props) => {
     const [NavItemActive, setNavItemActive] = useState('Home');

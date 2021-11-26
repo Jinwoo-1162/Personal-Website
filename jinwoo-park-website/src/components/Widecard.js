@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/Widecard.css';
 
 export const Widecard = (props) => {
     return (
