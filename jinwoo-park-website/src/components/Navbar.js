@@ -26,6 +26,7 @@ export const Navbar = (props) => {
                 <NavItem item="About" tolink="/about" activec={activate}></NavItem>
                 <NavItem item="Projects" tolink="/projects" activec={activate}></NavItem>
                 <NavItem item="Skills" tolink="/skills" activec={activate}></NavItem>
+                <NavItem item="Resume" tolink="/resume" activec={activate}></NavItem>
                 <NavItem item="Contact" tolink="/contact" activec={activate}></NavItem>
             </ul>
         </nav>

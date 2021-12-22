@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../CSS/Skills.css';
 
 export const Skills = (props) => {
-    const [myskills, setMyskills] = useState(['Java', 'Javascript', 'C', 'Python', 'SQL', 'HTML', 'CSS']);
+    const [myskills] = useState(['Java', 'Javascript', 'C', 'Python', 'SQL', 'HTML', 'CSS']);
 
     return (
         <div className="condiv">
@@ -11,7 +11,6 @@ export const Skills = (props) => {
                 {myskills.map((skill) => {
                     return <li className="skill">{skill}</li>
                 })}
-                <img src="" />
             </ul>
         </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/Social.css';
 
 export const Social = (props) => {
     return (
