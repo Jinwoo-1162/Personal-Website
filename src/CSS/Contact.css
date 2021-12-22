@@ -1,3 +1,13 @@
 h3 {
     margin-top: 30px;
 }
+
+.email-link:not(:hover) {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.email-link:hover {
+    color: gray;
+    transition-duration: 0.3s;
+}

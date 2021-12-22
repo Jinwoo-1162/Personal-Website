@@ -9,7 +9,7 @@ export const Contact = (props) => {
             <p>If you notice any bugs on the website, or you just want to chat, feel free to reach out!</p>
             <h3>
                 Email: &nbsp;
-                <a className="emaillink" href="mailto: jpark955@gatech.edu">jpark955@gatech.edu</a>
+                <a className="email-link" href="mailto: jpark955@gatech.edu">jpark955@gatech.edu</a>
             </h3>
             <h3>
                 Phone: (714) 713-8826<br></br><br></br>
