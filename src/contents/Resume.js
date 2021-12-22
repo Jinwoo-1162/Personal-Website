@@ -1,6 +1,6 @@
 import React from 'react';
 import { Document, Page, pdfjs } from "react-pdf";
-import resumePdf from '../ResumeJinParkOct2021.pdf'
+import resumePdf from '../Resumes/ResumeJinParkDec2021.pdf'
 import '../CSS/Resume.css';
 
 export const Resume = (props) => {
