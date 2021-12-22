@@ -13,7 +13,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Construction />
       <div className="App">
         <Navbar />

@@ -1,6 +1,7 @@
 {
   "name": "jinwoo-park-website",
   "version": "0.1.0",
+  "homepage": "http://Jinwoo-1162.github.io/Personal-Website",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -23,6 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
