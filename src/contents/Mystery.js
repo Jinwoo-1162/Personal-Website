@@ -48,7 +48,7 @@ function Mystery(props) {
                     <button className='number' onClick={() => input(-2)}>Enter</button>
                 </div>
                 <div className="secret" style={displaySecret? {display: ''}:{display: 'none'}}>
-                    <label>
+                    <label className='art-label'>
                         Secret Art Porfolio
                     </label>
                     <a className="album-link" href="https://imgur.com/a/ojFzh8j" target="-blank">Album Link</a></div>
