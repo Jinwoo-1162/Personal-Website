@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 
 :root{
-  --sidebar-flex:1.5;
+  --sidebar-flex:5vw;
   --condiv-flex:6;
   --fontsize-p:1.2rem;
   --fontsize-nav:1.6rem;
@@ -42,12 +42,14 @@ nav
   flex:var(--sidebar-flex);
   background:rgb(48, 119, 225);
   background:linear-gradient(180deg, rgb(48, 119, 225) 50%, rgba(132, 124, 252, 1) 80%);
+  align-items: center;
 }
 
 nav ul
 {
   position: fixed;
   font-size:var(--fontsize-nav);
+  align-items: center;
   text-align:center;
   list-style-type:none;
   text-decoration:none;
