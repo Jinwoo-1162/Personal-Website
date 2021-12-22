@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 
 :root{
-  --sidebar-flex:5vw;
+  --sidebar-flex:1.5rem;
   --condiv-flex:6;
   --fontsize-p:1.2rem;
   --fontsize-nav:1.6rem;
@@ -38,7 +38,8 @@ body
 
 nav
 {
-  padding:60px 30px 0px 30px;
+  padding:60px 3% 0px 3%;
+  /* padding:60px 30px 0px 30px; */
   flex:var(--sidebar-flex);
   background:rgb(48, 119, 225);
   background:linear-gradient(180deg, rgb(48, 119, 225) 50%, rgba(132, 124, 252, 1) 80%);
@@ -89,7 +90,7 @@ a
 
 .profilepic
 {
-  margin-top: auto;
+  margin-top: 3%;
   width:200px;
   height:200px;
   /* margin:30px; */
