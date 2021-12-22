@@ -60,6 +60,7 @@
 }
 
 .number:active {
+    transition-duration: 30ms;
     transform: scale(1);
     background-color: rgb(197, 197, 197);
 }

@@ -1,0 +1,34 @@
+.fun-facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    text-align: center;
+    margin: 30px 30px 0 30px;
+    padding: 5px;
+}
+
+.fact-image {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.facts:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.3s;
+}
+
+.facts:hover {
+    transform: scale(1.03);
+    box-shadow: -5px 5px 5px 5px rgb(223, 223, 223);
+    transition-duration: 0.3s;
+}

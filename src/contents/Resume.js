@@ -7,10 +7,12 @@ export const Resume = (props) => {
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
     return (
         <div className="condiv resumeBox">
-            <Document className="resume-pdf" file={resumePdf}>
-                <Page pageNumber={1}>
-                </Page>
-            </Document>
+            <a href={resumePdf} download>
+                <Document className="resume-pdf" file={resumePdf}>
+                    <Page pageNumber={1}>
+                    </Page>
+                </Document>
+            </a>
         </div>
     );
 }
