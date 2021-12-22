@@ -38,8 +38,8 @@ nav
 {
   padding:60px 30px 0px 30px;
   flex:var(--sidebar-flex);
-  background:rgb(238, 103, 143);
-  background:linear-gradient(180deg, rgba(238, 103, 143, 1) 50%, rgba(132, 124, 252, 1) 80%);
+  background:rgb(48, 119, 225);
+  background:linear-gradient(180deg, rgb(48, 119, 225) 50%, rgba(132, 124, 252, 1) 80%);
 }
 
 nav ul
@@ -64,6 +64,7 @@ a
 .active
 {
   font-weight:bolder;
+  transition-duration: 0.3s;
 }
 
 .condiv

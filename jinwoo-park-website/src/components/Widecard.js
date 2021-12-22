@@ -2,8 +2,11 @@ import React from 'react';
 import '../CSS/Widecard.css';
 
 export const Widecard = (props) => {
+    const expand = () => {
+        console.log('meme')
+    }
     return (
-        <div className="widecard">
+        <div className="widecard" onClick={expand}>
             <div className="compdet">
                 <h3>
                     {props.title}

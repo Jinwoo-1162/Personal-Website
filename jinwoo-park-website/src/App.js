@@ -7,11 +7,14 @@ import {Projects} from './contents/Projects.js';
 import {Skills} from './contents/Skills.js';
 import {Contact} from './contents/Contact.js';
 import {Resume} from './contents/Resume.js';
+import Mystery from './contents/Mystery';
+import Construction from './components/Construction';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
+      <Construction />
       <div className="App">
         <Navbar />
         <Route exact path="/">
@@ -31,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+        </Route>
+        <Route exact path="/mystery">
+          <Mystery />
         </Route>
       </div>
     </BrowserRouter>

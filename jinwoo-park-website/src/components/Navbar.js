@@ -14,7 +14,7 @@ export const Navbar = (props) => {
     const activate = (x) => {
         setNavItemActive(x);
 
-        if (NavItemActive.length > 0) {
+        if (NavItemActive !== x && NavItemActive.length > 0) {
             document.getElementById(NavItemActive).classList.remove('active');
         }
     }
@@ -28,6 +28,7 @@ export const Navbar = (props) => {
                 <NavItem item="Skills" tolink="/skills" activec={activate}></NavItem>
                 <NavItem item="Resume" tolink="/resume" activec={activate}></NavItem>
                 <NavItem item="Contact" tolink="/contact" activec={activate}></NavItem>
+                <NavItem item="???" tolink="/mystery" activec={activate} className="nav-mystery"></NavItem>
             </ul>
         </nav>
     );    

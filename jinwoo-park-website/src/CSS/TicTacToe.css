@@ -32,6 +32,7 @@
     border-radius: 10px;
     border-width: 5px;
     font-size: 15px;
+    text-align: center;
 }
 
 .start-quit-button:not(:hover) {
@@ -64,12 +65,12 @@
 
 .game-space:hover {
     border-style: none;
-    background-color: red;
+    background-color: rgba(132, 124, 252, 1);
     transition-duration: 0.3s;
 }
 
 .game-space:active {
-    background-color: blue;
+    background-color: rgb(48, 119, 225);
     border-style: none;
     transition-duration: 0ms;
 }

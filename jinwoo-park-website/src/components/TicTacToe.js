@@ -1,4 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react'
+import { Link } from "react-router-dom"; 
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
@@ -79,7 +80,7 @@ function TicTacToe(props) {
             setYourTurn(false)
             const computerTurnTimeout = setTimeout(computerTurn, 3000)
             // clearTimeout(computerTurnTimeout)
-        } else if (gameState.current.charAt(pos) != '-') {
+        } else if (currTurn && gameState.current.charAt(pos) != '-') {
             setTurnText('Pick a Different Spot')
             const wrongSpotTimeout = setTimeout(() => {
                 setTurnText('Your Turn')
@@ -108,6 +109,10 @@ function TicTacToe(props) {
         // eslint-disable-next-line
     }, [started])
 
+    const viewResume = () => {
+
+    }
+
     return (
         <div>
             {
@@ -126,7 +131,10 @@ function TicTacToe(props) {
                             <button id='8' className="game-space" onClick={() => gameOver? () => {} : takeTurn(yourTurn, 7)}></button>
                             <button id='9' className="game-space" onClick={() => gameOver? () => {} : takeTurn(yourTurn, 8)}></button>
                         </div>
-                        <button className="start-quit-button" onClick={() => setStarted(!started)}>Quit</button>
+                        {!gameOver?
+                        <button className="start-quit-button" onClick={() => setStarted(!started)}>Quit</button> : 
+                        <Link to="/resume"><button className="start-quit-button">View my Resume!</button></Link>
+                        }
                     </div>
                 )
                 :
