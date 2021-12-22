@@ -1,12 +1,26 @@
+.holder-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .game-holder {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(197, 197, 197);
 }
 
 .pin-value {
     height: 32px;
+    background-color: rgb(32, 202, 202);
+    text-align: center;
+    width: 470px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
 .numpad {
@@ -22,13 +36,32 @@
     width: 470px;
     height: 225px;
     background: grey;
+    border-radius: 10px;
 }
 
 .number {
     align-self: center;
     width: 150px;
     height: 50px;
-    font-size: larger
+    border: none;
+    background-color: rgb(232, 232, 232);
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.number:not(:hover) {
+    transition-duration: 0.3s;
+}
+
+.number:hover {
+    background-color: white;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.number:active {
+    transform: scale(1);
+    background-color: rgb(197, 197, 197);
 }
 
 .secret {

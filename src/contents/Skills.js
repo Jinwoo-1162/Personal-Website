@@ -10,7 +10,7 @@ export const Skills = (props) => {
             <div className='skill-grid'>
                 <div className='skill-box'><img className="skill-image" src="https://cdn-icons-png.flaticon.com/512/121/121152.png" alt="a skill" />Java</div>
                 <div className='skill-box'><img className="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="a skill" />Javascript</div>
-                <div className='skill-box'><img className="skill-image" src="http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" alt="a skill" />Python</div>
+                <div className='skill-box'><img className="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="a skill" />Python</div>
                 <div className='skill-box'><img className="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="a skill" />C</div>
                 <div className='skill-box'><img className="skill-image" src="https://icons-for-free.com/iconfiles/png/512/logo+my+query+server+sql+icon-1320184811372606623.png" alt="a skill" />SQL</div>
                 <div className='skill-box'><img className="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="a skill" />React</div>
