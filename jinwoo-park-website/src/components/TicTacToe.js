@@ -62,7 +62,7 @@ function TicTacToe(props) {
             setTurnText('Draw!')
             setGameOver(true)
             return
-        } else if (currTurn && gameState.current.charAt(pos) == '-') {
+        } else if (currTurn && gameState.current.charAt(pos).toString() === '-') {
             gameState.current = gameState.current.substring(0,pos) + 'O' + gameState.current.substring(pos + 1)
             turn.current = 'X'
             let button = document.getElementById(pos + 1)
@@ -78,11 +78,11 @@ function TicTacToe(props) {
 
             setTurnText('My Turn')
             setYourTurn(false)
-            const computerTurnTimeout = setTimeout(computerTurn, 3000)
+            setTimeout(computerTurn, 3000)
             // clearTimeout(computerTurnTimeout)
-        } else if (currTurn && gameState.current.charAt(pos) != '-') {
+        } else if (currTurn && gameState.current.charAt(pos).toString() !== '-') {
             setTurnText('Pick a Different Spot')
-            const wrongSpotTimeout = setTimeout(() => {
+            setTimeout(() => {
                 setTurnText('Your Turn')
             }, 3000)
             // clearTimeout(wrongSpotTimeout)
@@ -102,16 +102,12 @@ function TicTacToe(props) {
                 setTurnText('My Turn')
                 gameState.current = '---------'
                 setYourTurn(false)
-                const computerTurnTimeout = setTimeout(computerTurn, 3000)
+                setTimeout(computerTurn, 3000)
                 // clearTimeout(computerTurnTimeout)
             }
         }
         // eslint-disable-next-line
     }, [started])
-
-    const viewResume = () => {
-
-    }
 
     return (
         <div>

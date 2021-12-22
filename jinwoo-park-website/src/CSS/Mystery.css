@@ -1,0 +1,48 @@
+.game-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin-value {
+    height: 32px;
+}
+
+.numpad {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template: 
+    '. . .'
+    '. . .'
+    '. . .'
+    '. . .';
+    grid-gap: 5px;
+    width: 470px;
+    height: 225px;
+    background: grey;
+}
+
+.number {
+    align-self: center;
+    width: 150px;
+    height: 50px;
+    font-size: larger
+}
+
+.secret {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album-link {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.album-link:hover {
+    color: grey;
+    transition-duration: 0.3s;
+}
